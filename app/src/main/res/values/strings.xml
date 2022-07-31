@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">GithubApp</string>
+    <string name="username">Username</string>
+
+    <string-array name="data_username">
+        <item>Suryo Ari Sasmito</item>
+        <item>Raka Permana</item>
+        <item>Ridwan Abdul Gani</item>
+        <item>Taufiq Ardi</item>
+        <item>Ariifa Alfan</item>
+        <item>Refky Ahmad</item>
+        <item>Kevin Pramana</item>
+    </string-array>
+
+    <string-array name="data_city">
+        <item>Jakarta</item>
+        <item>Bekasi</item>
+        <item>Cikarang</item>
+        <item>Bekasi</item>
+        <item>Bekasi</item>
+        <item>Jakarta</item>
+        <item>Cikarang</item>
+    </string-array>
+
+    <string-array name="data_photo">
+        <item>@drawable/ari</item>
+        <item>@drawable/raka</item>
+        <item>@drawable/ridwan</item>
+        <item>@drawable/taufiq</item>
+        <item>@drawable/ariifa</item>
+        <item>@drawable/refky</item>
+        <item>@drawable/kevin</item>
+    </string-array>
+</resources>
