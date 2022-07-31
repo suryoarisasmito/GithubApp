@@ -12,6 +12,16 @@
         <item>Kevin Pramana</item>
     </string-array>
 
+    <string-array name="data_birth">
+        <item>11 November 1998</item>
+        <item>26 Februari 1998</item>
+        <item>11 November 1998</item>
+        <item>11 November 1998</item>
+        <item>11 November 1998</item>
+        <item>11 November 1998</item>
+        <item>11 November 1998</item>
+    </string-array>
+
     <string-array name="data_city">
         <item>Jakarta</item>
         <item>Bekasi</item>

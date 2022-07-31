@@ -30,11 +30,12 @@ class MainActivity : AppCompatActivity() {
     private val listGithub : ArrayList<GithubResponse>
         get() {
             val dataUsername = resources.getStringArray(R.array.data_username)
+            val dataBirth = resources.getStringArray(R.array.data_birth)
             val dataCity = resources.getStringArray(R.array.data_city)
             val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
             val listGithub = ArrayList<GithubResponse>()
             for (i in dataUsername.indices){
-                val github = GithubResponse(dataUsername[i], dataCity[i], dataPhoto.getResourceId(i, 0))
+                val github = GithubResponse(dataUsername[i],dataBirth[i], dataCity[i],dataPhoto.getResourceId(i, 0))
                 listGithub.add(github)
             }
             return listGithub

@@ -10,6 +10,7 @@ import com.dicoding.githubapp.model.GithubResponse
 class GithubAdapter(private val listGithub : ArrayList<GithubResponse>) : RecyclerView.Adapter<GithubAdapter.ListViewHolder>() {
     companion object {
         const val EXTRA_USERNAME = "extra_username"
+        const val EXTRA_BIRTH = "extra_birth"
         const val EXTRA_CITY = "extra_city"
         const val EXTRA_photo = "extra_photo"
     }
@@ -26,12 +27,12 @@ class GithubAdapter(private val listGithub : ArrayList<GithubResponse>) : Recycl
         val data = listGithub[position]
 
         holder.binding.tvItemName.text = data.name
-        holder.binding
         holder.binding.imageUser.setImageResource(data.photo)
         holder.binding.tvItemName.setOnClickListener {
 
             val intent = Intent(holder.itemView.context, DetailActivity::class.java)
             intent.putExtra(EXTRA_USERNAME, data.name)
+            intent.putExtra(EXTRA_BIRTH, data.birth)
             intent.putExtra(EXTRA_CITY, data.city)
             intent.putExtra(EXTRA_photo, data.photo)
             holder.itemView.context.startActivity(intent)

@@ -6,6 +6,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class GithubResponse(
     var name : String,
+    var birth : String,
     var city : String,
     var photo : Int
 ) : Parcelable
